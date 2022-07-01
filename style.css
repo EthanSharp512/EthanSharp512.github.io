@@ -577,6 +577,7 @@ section .title::after{
 }
 /* footer section styling */
 footer{
+    width: 100%;
     background: #292929;
     padding: 15px 23px;
     color: #fff;
@@ -603,6 +604,13 @@ footer span a:hover{
     object-fit: cover;
     border-radius: 6px;
     align-items: center;
+}
+
+#footpic{
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
 }
 
 
