@@ -711,6 +711,10 @@ footer span a:hover{
 }
 
 @media (max-width: 500px) {
+    .home{
+        background: url("images/background2.jpg") no-repeat center;
+    }
+
     .home .home-content .text-2{
         font-size: 50px;
     }
