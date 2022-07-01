@@ -694,7 +694,7 @@ footer span a:hover{
 
 @media (max-width: 690px) {
     .home{
-        background: url("images/background2.jpg") no-repeat center;
+        background: #292929;
         display: flex;
         height: 100vh;
         color: #fff;
@@ -723,7 +723,7 @@ footer span a:hover{
 
 @media (max-width: 500px) {
     .home{
-        background: url("images/background2.jpg") no-repeat center;
+        background: #292929;
         display: flex;
         height: 100vh;
         color: #fff;
