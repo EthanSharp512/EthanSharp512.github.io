@@ -16,6 +16,7 @@
 .navbar{
     position: fixed;
     width: 100%;
+    z-index: 999;
     padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
@@ -166,7 +167,7 @@ section{
 .about .title::after{
     content: "who i am";
     position: absolute;
-    bottom: -10px;
+    bottom: -12px;
     left: 50%;
     font-size: 20px;
     color: crimson;
@@ -175,12 +176,27 @@ section{
     transform: translateX(-50%);
 }
 
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .about-content .left{
+    width: 45%;
+}
+
 .about .about-content .left img{
     height: 400px;
     width: 400px;
     object-fit: cover;
+    border-radius: 6px;
 }
 
+.about .about-content .right{
+    width: 55%;
+}
 
 
 
