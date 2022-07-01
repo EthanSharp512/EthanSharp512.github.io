@@ -176,43 +176,43 @@ section{
     transform: translateX(-50%);
 }
 
-.about .about-content{
+.about .about-content .skills-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
 
-.about .about-content .left{
+.about .about-content .skills-content .left{
     width: 45%;
 }
 
-.about .about-content .left img{
+.about .about-content  .skills-content .left img{
     height: 400px;
     width: 400px;
     object-fit: cover;
     border-radius: 6px;
 }
 
-.about .about-content .right{
+.about .about-content .skills-content .right{
     width: 55%;
 }
 
-.about .about-content .right .text{
+.about .about-content .skills-content .right .text{
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
-.about .about-content .right .text span{
+.about .about-content .skills-content .right .text span{
     color: crimson;
 }
 
-.about .about-content .right p{
+.about .about-content .skills-content .right p{
     text-align: justify;
 }
 
-.about .about-content .right a{
+.about .about-content .skills-content .right a{
     display: inline-block;
     background: crimson;
     color: #fff;
@@ -225,7 +225,7 @@ section{
     transition: all 0.3s ease;
 }
 
-.about .about-content .right a:hover{
+.about .about-content .skills-content .right a:hover{
     color: crimson;
     background: none;
 
