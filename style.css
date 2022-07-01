@@ -693,6 +693,17 @@ footer span a:hover{
 }
 
 @media (max-width: 690px) {
+    .home{
+        background: url("images/background2.jpg") no-repeat center;
+        display: flex;
+        height: 100vh;
+        color: #fff;
+        min-height: 200px;
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
     .max-width{
         padding: 0 23px;
     }
@@ -713,6 +724,13 @@ footer span a:hover{
 @media (max-width: 500px) {
     .home{
         background: url("images/background2.jpg") no-repeat center;
+        display: flex;
+        height: 100vh;
+        color: #fff;
+        min-height: 200px;
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: 'Ubuntu', sans-serif;
     }
 
     .home .home-content .text-2{
