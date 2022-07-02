@@ -607,9 +607,8 @@ footer span a:hover{
 
 #footpic{
     align-items: center;
-    width: 20px;
-    height: 20px;
-    opacity: 0.5;
+    width: 30px;
+    height: 30px;
 }
 
 
@@ -692,6 +691,14 @@ footer span a:hover{
 }
 
 @media (max-width: 690px) {
+    #contactpic{
+        display: flex;
+        height: 300px;  
+        width: 300px;
+        object-fit: cover;
+        border-radius: 6px;
+        align-items: center;
+    }
     .home{
         background: #292929;
         display: flex;
@@ -721,6 +728,14 @@ footer span a:hover{
 }
 
 @media (max-width: 500px) {
+    #contactpic{
+        display: flex;
+        height: 200px;  
+        width: 200px;
+        object-fit: cover;
+        border-radius: 6px;
+        align-items: center;
+    }
     .home{
         background: #292929;
         display: flex;
