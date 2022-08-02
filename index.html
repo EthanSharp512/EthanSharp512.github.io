@@ -139,18 +139,25 @@
             <div class="carousel owl-carousel">
                 <div class="card">
                     <div class="box">
-                        <img src="images/project1.jpg" alt="" style="opacity: 0.9;">
+                        <img src="images/project1.jpg" alt="" style="opacity: 0.9; margin-top: 5px; margin-bottom: 5px;">
                         <div class="text">Poker Tracker</div>
-                        <p>Poker tracker descrioptaoisd.</p><br>
-                        <p>Demo Repo   Hosted site</p><br>
+                        <p class="project-desc">A poker companion web application to recommend actions and calculate odds of the hands you are dealt</p>
+                        <div class="project-links">
+                            <a href="https://www.youtube.com/watch?v=jBf5Dd_C6yQ" target="_blank" class="project-link">Demo</a>
+                            <a href="https://github.com/EthanSharp512/foundations-capstone" target="_blank" class="project-link">Repo</a>
+                            <a href="https://poker-tracker-es.herokuapp.com/" target="_blank" class="project-link">Hosted site</a>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="images/iwasthere.png" alt="">
+                        <img src="images/iwasthere.png" alt="" style="margin-top: 5px; margin-bottom: 5px;">
                         <div class="text">I Was There</div>
-                        <p>I was there descriptiosn </p><br>
-                        <p>Demo   Repo   Hosted site</p><br>
+                        <p class="project-desc">A media sharing site to organize photos, footage and content from concerts and events you have attended</p>
+                        <div class="project-links">
+                            <a href="https://www.youtube.com/watch?v=XxmOSzWNiH4&t=3s" target="_blank" class="project-link">Demo</a>
+                            <a href="https://github.com/EthanSharp512/python-specs-capstone" target="_blank" class="project-link">Repo</a>
+                        </div>
                     </div>
                 </div>
 
@@ -172,25 +179,26 @@
             <div class="max-width">
                 <h2 class="title">Contact me</h2>
                 <div class="contact-content">
-                    <div class="column left">
+                    <div class="column left" onmouseleave="outFunc()">
                         <div class="text">Get in Touch</div>
                         <p>Thank you for learning about me and my projects and hopefully I caught your eye! I am always open to collaboration and I love to take on challenges to help me become a better developer.</p>
                         <div class="icons">
-                            <a class="row">
+                            <div class="row tooltip contactgrow">
                                 <i class="fas fa-envelope"></i>
-                                <div class="info">
+                                <div class="info" onclick="myFunction()">    
+                                    <div class="tooltiptext" id="myTooltip">Click to copy my email!</div>
                                     <div class="head">Email</div>
-                                    <div class="sub-title">ethansharpdev@gmail.com</div>
+                                    <div class="sub-title">ethansharpdev@gmail.com</div>   
                                 </div>
-                            </a>
-                            <a class="row" href="https://www.linkedin.com/in/ethansharpdev/" target="_blank">
+                            </div>
+                            <a class="row contactgrow" href="https://www.linkedin.com/in/ethansharpdev/" target="_blank">
                                 <img class="contactlog" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" />
                                 <div class="info">
                                     <div class="head">LinkedIn</div>
                                     <div class="sub-title">Check out my LinkedIn!</div>
                                 </div>
                             </a>
-                            <a class="row" href="https://github.com/EthanSharp512" target="_blank"> 
+                            <a class="row contactgrow" href="https://github.com/EthanSharp512" target="_blank"> 
                                 <img class="contactlog" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
                                 <div class="info">
                                     <div class="head">GitHub</div>
@@ -208,12 +216,7 @@
     
         <!-- footer section start -->
         <footer>
-          <div id="footerpic">
-            <br>
-            <br>
-            <br>
-            
-          </div>
+          <div><br><br><br></div>
         </footer>
     
         <script src="script.js"></script>

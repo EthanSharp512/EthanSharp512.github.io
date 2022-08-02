@@ -37,24 +37,40 @@ $(document).ready(function(){
 
     // owl carousel script
     $('.carousel').owlCarousel({
-        margin: 20,
+        margin: 30,
         loop: true,
-        autoplay: true,
-        autoplayTimeOut: 2000,
+        autoplay: false,
+        autoplayTimeOut: 30000,
         autoplayHoverPause: true,
         responsive: {
             0:{
                 items: 1,
+                autoplayTimeOut: 30000,
                 nav: false
             },
-            600:{
-                items: 2,
+            400:{
+                items: 1,
+                autoplayTimeOut: 30000,
                 nav: false
             },
             1000:{
                 items: 2,
+                autoplayTimeOut: 30000,
                 nav: false
             }
         }
     });
 });
+
+function myFunction() {
+    let copyText = "ethansharpdev@gmail.com";
+    navigator.clipboard.writeText(copyText);
+
+    let tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copied to clipboard!";
+};
+
+function outFunc() {
+    let tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Click to copy my email!";
+};
