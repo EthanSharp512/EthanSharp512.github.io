@@ -16,6 +16,16 @@ html{
     scroll-behavior: smooth;
 }
 
+p:visited { 
+    text-decoration: none; 
+    color: black;
+}
+
+div:visited { 
+    text-decoration: none;
+    color: black;
+}
+
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -95,6 +105,7 @@ section .title::after{
 .navbar.sticky{
     padding: 15px 0;
     background: var(--main-color);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
 }
 .navbar .max-width{
     display: flex;
@@ -139,7 +150,13 @@ section .title::after{
     font-size: 23px;
     cursor: pointer;
     display: none;
+    transition: all 0.9s ease;
 }
+
+.menu-btn:hover{
+    transform: scale(1.05);
+}
+
 .scroll-up-btn{
     position: fixed;
     height: 45px;
@@ -219,11 +236,12 @@ section .title::after{
 .home .home-content a:hover{
     color: var(--main-color);
     background: #fff;
+    opacity: 0.99;
 }
 
 /* about section styling */
 .about .title::after{
-    content: "who i am";
+    content: "Who I am";
 }
 .about .about-content .left{
     width: 45%;
@@ -277,7 +295,7 @@ section .title::after{
 .services .title::after,
 .teams .title::after{
     background: #292929;
-    content: "what i provide";
+    content: "What I provide";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -314,7 +332,7 @@ section .title::after{
 /* skills section styling */
 
 .skills .title::after{
-    content: "what i know";
+    content: "What I know";
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -386,9 +404,10 @@ section .title::after{
     width: 70%;
 }
 
-/* teams section styling */
+/* teams styling */
+
 .teams .title::after{
-    content: "what i've done";
+    content: "What I've done";
 }
 .teams .carousel .card{
     background: #222;
@@ -417,15 +436,15 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 .teams .carousel .card img{
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid var(--main-color);
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 .teams .carousel .card:hover img{
-    border-color: #fff;
+    border-color: #292929;
 }
 .owl-dots{
     text-align: center;
@@ -451,7 +470,7 @@ section .title::after{
 
 /* contact section styling */
 .contact .title::after{
-    content: "get in touch";
+    content: "Get in touch";
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -551,8 +570,8 @@ section .title::after{
     flex-wrap: wrap;
     justify-content: center;
     padding: 10px;
-    margin-top: 75px;
-    margin-bottom: -50px;
+    margin-top: 40px;
+    margin-bottom: -10px;
 }
 
 
@@ -566,8 +585,8 @@ section .title::after{
 }
 
 .icon{
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
     padding: 10px;
     transition: 0.1s;
 }
@@ -603,6 +622,7 @@ footer span a:hover{
     object-fit: cover;
     border-radius: 6px;
     align-items: center;
+    margin-left: 90px;
 }
 
 #footpic{
@@ -694,7 +714,7 @@ footer span a:hover{
     #contactpic{
         display: flex;
         height: 300px;  
-        width: 150px;
+        width: 300px;
         object-fit: cover;
         border-radius: 6px;
         align-items: center;
@@ -731,7 +751,7 @@ footer span a:hover{
     #contactpic{
         display: flex;
         height: 300px;  
-        width: 150px;
+        width: 230px;
         object-fit: cover;
         border-radius: 6px;
         align-items: center;
