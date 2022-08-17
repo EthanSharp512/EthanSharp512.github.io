@@ -506,6 +506,7 @@ section .title::after{
 }
 .contact .contact-content .info .head{
     font-weight: 500;
+    color: black;
 }
 .contact .contact-content .info .sub-title{
     color: #333;
@@ -588,6 +589,11 @@ section .title::after{
 
 .desc{
     text-align: center;
+    color: black;
+}
+
+.desc:visited{
+    color: #000000;
 }
 
 .icon{
@@ -600,6 +606,7 @@ section .title::after{
 .icon:hover{
     transform: scale(1.1);
 }
+
 /* footer section styling */
 footer{
     width: 100%;
@@ -651,11 +658,14 @@ footer span a:hover{
     align-items: center;
 }
 
+
+
 .project-link{
     display: inline-block;
     font-size: larger;
     margin: 15px;
     transition-duration: 0.4s;
+    color: white;
 }
 
 .project-desc{
