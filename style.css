@@ -597,8 +597,8 @@ section .title::after{
 }
 
 .icon{
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 100px;
     padding: 10px;
     transition: 0.1s;
 }
